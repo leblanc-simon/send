@@ -60,7 +60,7 @@ unlockInputPlaceholder = Mot de passe
 unlockButtonLabel = Déverrouiller
 downloadFileTitle = Télécharger le fichier chiffré
 # Firefox Send is a brand name and should not be localized.
-downloadMessage = Votre ami⋅e vous a envoyé un fichier avec Firefox Send, un service qui permet d’envoyer des fichiers de façon sécurisée, confidentielle et chiffrée via un lien qui expire automatiquement pour que vos informations ne restent pas en ligne indéfiniment.
+downloadMessage = Une personne vous a envoyé un fichier avec Send par Portailpro, un service qui permet d’envoyer des fichiers de façon sécurisée, confidentielle et chiffrée via un lien qui expire automatiquement pour que vos informations ne restent pas en ligne indéfiniment.
 # Text and title used on the download link/button (indicates an action).
 downloadButtonLabel = Télécharger
 downloadNotification = Le téléchargement est terminé.
