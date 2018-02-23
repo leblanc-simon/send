@@ -31,9 +31,6 @@ module.exports = function(state, pageAction) {
         src="${assets.get('illustration_download.svg')}"
         title="${state.translate('downloadAltText')}"/>
       ${pageAction}
-      <a class="link link--action" href="/">
-        ${state.translate('sendYourFilesLink')}
-      </a>
       ${info}
     </div>
   `;

@@ -7,15 +7,11 @@ module.exports = function(state) {
       <div class="title">${state.translate('legalHeader')}</div>
         ${raw(
           replaceLinks(state.translate('legalNoticeTestPilot'), [
-            'https://testpilot.firefox.com/terms',
-            'https://testpilot.firefox.com/privacy',
-            'https://testpilot.firefox.com/experiments/send'
+            'https://github.com/mozilla/send'
           ])
         )}
         ${raw(
           replaceLinks(state.translate('legalNoticeMozilla'), [
-            'https://www.mozilla.org/privacy/websites/',
-            'https://www.mozilla.org/about/legal/terms/mozilla/'
           ])
         )}
     </div>

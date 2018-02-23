@@ -30,9 +30,9 @@ downloadCount = { $num ->
         [one] 1 download
        *[other] { $num } downloads
     }
-timespanHours = { $num ->
-        [one] 1 hour
-       *[other] { $num } hours
+timespanDays = { $num ->
+        [one] 1 jour
+       *[other] { $num } jours
     }
 copyUrlFormLabelWithName = Copy and share the link to send your file: { $filename }
 copyUrlFormButton = Copy to clipboard
@@ -107,6 +107,8 @@ reportIPInfringement = Report IP Infringement
 javascriptRequired = Firefox Send requires JavaScript
 whyJavascript = Why does Firefox Send require JavaScript?
 enableJavascript = Please enable JavaScript and try again.
+# A short representation of a countdown timer containing the number of days, hours and minutes remaining as digits, example "2d 13h 47m"
+expiresDaysHoursMinutes = { $days }d { $hours }h { $minutes }m
 # A short representation of a countdown timer containing the number of hours and minutes remaining as digits, example "13h 47m"
 expiresHoursMinutes = { $hours }h { $minutes }m
 # A short representation of a countdown timer containing the number of minutes remaining as digits, example "56m"

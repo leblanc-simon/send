@@ -45,7 +45,7 @@ a {
 
 .main {
   flex: auto;
-  max-width: 650px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;

@@ -6,7 +6,7 @@ uploadPageHeader = Partage de fichiers de façon confidentielle et chiffrée
 uploadPageExplainer = Envoyez des fichiers de façon sécurisée, confidentielle et chiffrée, via un lien qui expire automatiquement pour que vos informations ne restent pas en ligne indéfiniment.
 uploadPageLearnMore = En savoir plus
 uploadPageDropMessage = Déposez votre fichier ici pour l’envoyer
-uploadPageSizeMessage = Pour un résultat fiable, il est conseillé d’utiliser des fichiers de taille inférieure à 1 Go
+uploadPageSizeMessage = Pour un résultat fiable, il est conseillé d’utiliser des fichiers de taille inférieure à 10 Go
 uploadPageBrowseButton = Sélectionner un fichier sur l’ordinateur
 uploadPageBrowseButton1 = Choisir un fichier à envoyer
 uploadPageMultipleFilesAlert = L’envoi de plusieurs fichiers ou de dossiers n’est pas pris en charge pour le moment.
@@ -35,6 +35,10 @@ timespanHours =
     { $num ->
         [one] 1 heure
        *[other] { $num } heures
+    }
+timespanDays = { $num ->
+        [one] 1 jour
+       *[other] { $num } jours
     }
 copyUrlFormLabelWithName = Copiez et partagez le lien pour envoyer votre fichier : { $filename }
 copyUrlFormButton = Copier dans le presse-papiers
@@ -88,8 +92,8 @@ expiryFileList = Expire dans
 deleteFileList = Supprimer
 nevermindButton = Non merci
 legalHeader = Confidentialité et conditions d’utilisation
-legalNoticeTestPilot = Firefox Send est actuellement une expérience Test Pilot, et en tant que tel est soumis aux <a>Conditions d’utilisation</a> et à la <a>Politique de confidentialité</a> de Test Pilot. Vous pouvez en apprendre plus sur cette expérience et sur la collecte de données <a>ici</a>.
-legalNoticeMozilla = L’utilisation du site web Firefox Send est aussi soumise à <a>l’Avis de confidentialité relatif aux sites web</a> ainsi qu’aux <a>Conditions d’utilisation des sites web</a> de Mozilla.
+legalNoticeTestPilot = Send par Portailpro est une instance de <a>Firefox Send</a> permettant d'envoyer facilement et de manière sécurisée des fichiers volumineux. Son usage est réservé aux membres de Portailpro et Enova ainsi que de leurs clients.
+legalNoticeMozilla = L’utilisation du site web Send par Portailpro est soumise à l'autorisation de Portailpro ou Enova.
 deletePopupText = Supprimer ce fichier ?
 deletePopupYes = Oui
 deletePopupCancel = Annuler
@@ -109,6 +113,8 @@ reportIPInfringement = Signaler une violation de la p.i.
 javascriptRequired = Firefox Send nécessite JavaScript
 whyJavascript = Pourquoi Firefox Send nécessite-t-il JavaScript ?
 enableJavascript = Veuillez activer JavaScript puis réessayer.
+# A short representation of a countdown timer containing the number of days, hours and minutes remaining as digits, example "2d 13h 47m"
+expiresDaysHoursMinutes = { $days } j { $hours } h { $minutes } min
 # A short representation of a countdown timer containing the number of hours and minutes remaining as digits, example "13h 47m"
 expiresHoursMinutes = { $hours } h { $minutes } min
 # A short representation of a countdown timer containing the number of minutes remaining as digits, example "56m"

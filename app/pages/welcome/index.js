@@ -12,11 +12,6 @@ module.exports = function(state, emit) {
     <div class="title">${state.translate('uploadPageHeader')}</div>
     <div class="description">
       <div>${state.translate('uploadPageExplainer')}</div>
-      <a
-        href="https://testpilot.firefox.com/experiments/send"
-        class="link">
-        ${state.translate('uploadPageLearnMore')}
-      </a>
     </div>
     <div class="uploadArea"
       ondragover=${dragover}

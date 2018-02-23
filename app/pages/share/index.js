@@ -96,11 +96,11 @@ module.exports = function(state, emit) {
 };
 
 function expireInfo(file, translate, emit) {
-  const hours = Math.floor(EXPIRE_SECONDS / 60 / 60);
-  const el = html`<div class="title">${raw(
+  const days = Math.floor(EXPIRE_SECONDS / 60 / 60 / 24);
+  const el = html`<div>${raw(
     translate('expireInfo', {
       downloadCount: '<select></select>',
-      timespan: translate('timespanHours', { num: hours })
+      timespan: translate('timespanDays', { num: days })
     })
   )}</div>`;
   const select = el.querySelector('select');
